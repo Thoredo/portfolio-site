@@ -1,0 +1,41 @@
+:root {
+    --white: #FEFEFEff;
+    --vista-blue: #8794D4ff;
+    --maya-blue: #78C0E9ff;
+    --cambridge-blue: #70B2A5ff;
+    --rose-pompadour: #E28596ff;
+    --african-violet: #9C7DB8ff;
+    --wisteria: #BA99D0ff;
+    --rose-pompadour-2: #DA7E92ff;
+}
+
+.top-menu {
+    width: 100vw;
+    background-color: var(--maya-blue);
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list {
+    list-style-type: none;
+    height: 30px;
+}
+
+.menu-item {
+    display: inline;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.page-links {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-links:hover {
+    color: var(--vista-blue);
+}
