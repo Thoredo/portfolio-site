@@ -1,7 +1,9 @@
 :root {
     --white: #FEFEFEff;
-    --vista-blue: #8794D4ff;
+    --vista-blue: #8794d4;
+    --transparent-vista-blue: rgba(135, 148, 212, 0.7);
     --maya-blue: #78C0E9ff;
+    --transparent-maya-blue: rgba(120, 192, 233, 0.5);
     --cambridge-blue: #70B2A5ff;
     --rose-pompadour: #E28596ff;
     --african-violet: #9C7DB8ff;
@@ -84,12 +86,13 @@ a:nth-child(4):hover~.animation {
     width: 130px;
     left: 340px;
     background-color: var(--cambridge-blue);
+    background-size: cover;
 }
 
 body {
     font-size: 12px;
     font-family: sans-serif;
-    background: var();
+    background-image: linear-gradient(to right, var(--transparent-vista-blue), var(--transparent-maya-blue));
 }
 
 h1 {
