@@ -12,11 +12,11 @@
 <body>
     <header>
         <nav class="top-menu">
-            <ul class="menu-list">
-                <li class="menu-item"><a class="page-links" href="{{ url_for('index') }}">Home</a></li>
-                <li class="menu-item"><a class="page-links" href="{{ url_for('projects') }}">Projects</a></li>
-                <li class="menu-item"><a class="page-links" href="{{ url_for('contact') }}">Contact</a></li>
-            </ul>
+            <a class="page-links" href="{{ url_for('index') }}">Home</a>
+            <a class="page-links" href="#">About</a>
+            <a class="page-links" href="{{ url_for('projects') }}">Projects</a>
+            <a class="page-links" href="{{ url_for('contact') }}">Contact</a>
+            <div class="animation  {{ animation_class }}"></div>
         </nav>
     </header>
     {% block content %}{% endblock %}
