@@ -104,12 +104,12 @@ h1 {
     font-family: 'Cherry Swash', cursive;
 }
 
-p {
+footer {
     position: absolute;
     bottom: 20px;
     width: 100%;
     text-align: center;
-    color: #ecf0f1;
+    color: var(--white);
     font-family: 'Cherry Swash', cursive;
     font-size: 16px;
 }
