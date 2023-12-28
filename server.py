@@ -18,5 +18,10 @@ def contact():
     return render_template("contact.html", animation_class="start-contact")
 
 
+@app.route("/about")
+def about():
+    return render_template("about.html", animation_class="start-about")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
