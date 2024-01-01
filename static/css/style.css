@@ -116,9 +116,15 @@ h2 {
     margin-top: 10%;
 }
 
+.projects {
+    margin-top: 80px;
+    margin-left: 30%;
+}
+
 .project-images {
     width: 25%;
-    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 5%;
 }
 
 .hero-hyperlink-div {
