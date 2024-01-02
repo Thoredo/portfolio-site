@@ -5,7 +5,21 @@
 {% block content %}
 <h1>Projects</h1>
 <div class="projects">
-    <img src="static/images/morse-code.png" alt="black and white image with dots and stripes" class="project-images">
-    <img src="static/images/tic-tac-toe.png" alt="black and white image of tic tac toe" class="project-images">
+    <div class="image-container">
+        <a href="#"><img src="static/images/morse-code.png" alt="black and white image with dots and stripes"
+                class="project-images"></a>
+        <div class="overlay overlayViolet">
+            <div class="text">Morse code</div>
+        </div>
+    </div>
+    <div class="image-container right-images">
+        <a href="#"><img src="static/images/tic-tac-toe.png" alt="black and white image of tic tac toe"
+                class="project-images"></a>
+        <div class="overlay overlayCambridgeBlue">
+            <div class="text">Tic Tac toe</div>
+        </div>
+    </div>
+
+
 </div>
 {% endblock %}
