@@ -175,6 +175,21 @@ h2 {
     background-color: var(--cambridge-blue);
 }
 
+.overlayMayaBlue {
+    background-color: var(--maya-blue);
+}
+
+.overlayRose {
+    background-color: var(--rose-pompadour);
+}
+
+.overlayVistaBlue {
+    background-color: var(--vista-blue);
+}
+
+.overlayWisteria {
+    background-color: var(--wisteria);
+}
 
 .hero-hyperlink-div {
     margin-left: 43%;
