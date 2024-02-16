@@ -290,4 +290,9 @@ footer {
     .projects {
         margin-left: 0%;
     }
+
+    .hero-hyperlink-div {
+        margin-left: 20%;
+        margin-top: 40px;
+    }
 }
