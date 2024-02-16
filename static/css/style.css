@@ -217,12 +217,26 @@ h2 {
     background-color: var(--rose-pompadour);
 }
 
+.about-text {
+    color: black;
+    font-size: 22px;
+    margin: 2% 10% 0% 0%;
+}
+
+.about-image {
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+    margin-top: 2%;
+}
+
 footer {
     position: fixed;
     bottom: 20px;
     width: 100%;
     text-align: center;
-    color: var(--white);
+    color: black;
     font-family: 'Cherry Swash', cursive;
     font-size: 16px;
 }
@@ -294,5 +308,9 @@ footer {
     .hero-hyperlink-div {
         margin-left: 20%;
         margin-top: 40px;
+    }
+
+    .about-image {
+        width: 100%;
     }
 }
