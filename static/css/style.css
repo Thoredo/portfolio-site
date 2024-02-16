@@ -251,7 +251,7 @@ footer {
         height: 50px;
     }
 
-    nav .start-about,
+    nav .start-projects,
     a:nth-child(2):hover~.animation {
         width: 100%;
         left: 0px;
@@ -259,7 +259,7 @@ footer {
         height: 50px;
     }
 
-    nav .start-projects,
+    nav .start-about,
     a:nth-child(3):hover~.animation {
         width: 100%;
         left: 0px;
