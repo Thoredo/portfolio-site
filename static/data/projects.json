@@ -17,8 +17,9 @@
         "img-alt": "black and white image of tic tac toe",
         "overlay-class": "overlay overlayCambridgeBlue",
         "overlay-text": "Tic Tac toe",
-        "video-link": "",
-        "github-link": ""
+        "video-link": "https://www.youtube.com/embed/jFUtm4dSW1Q?si=XCaGX3kvWwMrZGnW",
+        "github-link": "https://github.com/Thoredo/tic-tac-toe",
+        "project-button": "Tic Tac Toe"
     },
     {
         "project-name": "breakout",
