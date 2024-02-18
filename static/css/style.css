@@ -232,13 +232,54 @@ h2 {
 }
 
 footer {
-    position: fixed;
     bottom: 20px;
     width: 100%;
     text-align: center;
     color: black;
     font-family: 'Cherry Swash', cursive;
     font-size: 16px;
+}
+
+.form-container {
+    margin-left: 20%;
+}
+
+.form-label,
+.form-submit-button {
+    font-size: 20px;
+    display: block;
+}
+
+.form-name {
+    width: 200px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-email {
+    width: 300px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-message {
+    display: block;
+    width: 300px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-top: 50px;
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+.contact-info a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 500px) {
@@ -313,4 +354,28 @@ footer {
     .about-image {
         width: 100%;
     }
+
+    .form-container {
+        margin-left: 0%;
+    }
+
+    .form-name {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .form-email {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .form-message {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .form-submit-button {
+        margin-left: 5%;
+    }
+
 }

@@ -1,7 +1,37 @@
 from flask import Flask, render_template
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField, TextAreaField, EmailField
+from wtforms.validators import DataRequired, Email
 from datetime import datetime
+from dotenv import load_dotenv
+import os
+import smtplib
+
+load_dotenv()
 
 app = Flask(__name__)
+app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
+
+
+class ContactForm(FlaskForm):
+    name = StringField("Name:", validators=[DataRequired()])
+    email = EmailField("Email:", validators=[DataRequired(), Email()])
+    message = TextAreaField("Message:", validators=[DataRequired()])
+    submit = SubmitField("Submit")
+
+
+def send_mail(name, email, message):
+    # Send email
+    gmail_app_key = os.getenv("GMAIL_APP_KEY")
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.starttls()
+    server.login("jurgenstegemanportfolio@gmail.com", gmail_app_key)
+
+    email_message = f"{name}, sent you the following message: \n{message}"
+
+    text = f"Subject: Message from { email }\n\n{email_message}"
+
+    server.sendmail("jurgenstegemanportfolio@gmail.com", "jurgenstegeman@live.nl", text)
 
 
 def calculate_age(birthdate):
@@ -24,9 +54,32 @@ def projects():
     return render_template("projects.html", animation_class="start-projects")
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
-    return render_template("contact.html", animation_class="start-contact")
+    # User input
+    name = None
+    email = None
+    message = None
+    form = ContactForm()
+    # Validate form
+    if form.validate_on_submit():
+        name = form.name.data
+        form.name.data = ""
+        email = form.email.data
+        form.email.data = ""
+        message = form.message.data
+        form.message.data = ""
+
+        send_mail(name, email, message)
+
+    return render_template(
+        "contact.html",
+        animation_class="start-contact",
+        name=name,
+        form=form,
+        email=email,
+        message=message,
+    )
 
 
 @app.route("/about")
