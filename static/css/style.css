@@ -291,6 +291,40 @@ footer {
     margin-top: 10px;
 }
 
+.project-video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.project-video {
+    width: 600px;
+    margin-top: 50px;
+    height: 400px;
+}
+
+.project-github-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--african-violet) solid 1px;
+    background-color: var(--african-violet);
+    padding: 15px;
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 2%;
+}
+
+
+@media screen and (max-width: 610px) {
+    .project-video {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 500px) {
     nav {
         width: 100%;
@@ -391,5 +425,4 @@ footer {
     .form-submit-button {
         margin-left: 5%;
     }
-
 }

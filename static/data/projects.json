@@ -5,7 +5,10 @@
         "img-src": "static/images/morse-code.png",
         "img-alt": "black and white image with dots and stripes",
         "overlay-class": "overlay overlayViolet",
-        "overlay-text": "Morse code"
+        "overlay-text": "Morse code",
+        "video-link": "https://www.youtube.com/embed/LALuD0cZOuo?si=gvh09guE2PPD8onY",
+        "github-link": "https://github.com/Thoredo/morse-code-converter",
+        "project-button": "Morse Code"
     },
     {
         "project-name": "tic-tac-toe",
@@ -13,7 +16,9 @@
         "img-src": "static/images/tic-tac-toe.png",
         "img-alt": "black and white image of tic tac toe",
         "overlay-class": "overlay overlayCambridgeBlue",
-        "overlay-text": "Tic Tac toe"
+        "overlay-text": "Tic Tac toe",
+        "video-link": "",
+        "github-link": ""
     },
     {
         "project-name": "breakout",
@@ -21,7 +26,9 @@
         "img-src": "static/images/breakout.png",
         "img-alt": "black and white image of breakout game",
         "overlay-class": "overlay overlayMayaBlue",
-        "overlay-text": "Breakout"
+        "overlay-text": "Breakout",
+        "video-link": "",
+        "github-link": ""
     },
     {
         "project-name": "watermarking-app",
@@ -29,7 +36,9 @@
         "img-src": "static/images/image-watermarking.png",
         "img-alt": "black and white image for my watermarking app",
         "overlay-class": "overlay overlayRose",
-        "overlay-text": "Watermarking App"
+        "overlay-text": "Watermarking App",
+        "video-link": "",
+        "github-link": ""
     },
     {
         "project-name": "speed-typing-test",
@@ -37,6 +46,8 @@
         "img-src": "static/images/speed-typing-test.png",
         "img-alt": "black and white image for my speed typing test app",
         "overlay-class": "overlay overlayVistaBlue",
-        "overlay-text": "Speed Typing Test"
+        "overlay-text": "Speed Typing Test",
+        "video-link": "",
+        "github-link": ""
     }
 ]
