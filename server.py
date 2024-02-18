@@ -6,6 +6,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 import os
 import smtplib
+import json
 
 load_dotenv()
 
@@ -51,7 +52,11 @@ def index():
 
 @app.route("/projects")
 def projects():
-    return render_template("projects.html", animation_class="start-projects")
+    with open("static/data/projects.json") as file:
+        project_data = json.load(file)
+    return render_template(
+        "projects.html", animation_class="start-projects", project_data=project_data
+    )
 
 
 @app.route("/contact", methods=["GET", "POST"])

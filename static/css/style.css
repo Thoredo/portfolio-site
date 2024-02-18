@@ -360,8 +360,13 @@ footer {
         margin-top: 40px;
     }
 
+    .about-text {
+        margin-left: 5%;
+    }
+
     .about-image {
-        width: 100%;
+        width: 95%;
+        margin-bottom: 3%;
     }
 
     .form-container {

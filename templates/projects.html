@@ -6,44 +6,17 @@
 <div class="content">
     <h1>Projects</h1>
     <div class="projects">
-        <div class="image-container">
-            <a href="#"><img src="static/images/morse-code.png" alt="black and white image with dots and stripes"
-                    class="project-images"></a>
-            <div class="overlay overlayViolet">
-                <div class="text">Morse code</div>
+        {% for project in project_data %}
+        <div class="{{ project['img-container-class'] }}">
+            <a href="#"><img src="{{ project['img-src'] }}" alt="{{ project['img-alt'] }}" class="project-images"></a>
+            <div class="{{ project['overlay-class'] }}">
+                <div class="text">{{ project['overlay-text'] }}</div>
             </div>
         </div>
-        <div class="image-container right-images">
-            <a href="#"><img src="static/images/tic-tac-toe.png" alt="black and white image of tic tac toe"
-                    class="project-images"></a>
-            <div class="overlay overlayCambridgeBlue">
-                <div class="text">Tic Tac toe</div>
-            </div>
-        </div>
+        {% if loop.index % 2 == 0 %}
         <br>
-        <div class="image-container">
-            <a href="#"><img src="static/images/breakout.png" alt="black and white image of breakout game"
-                    class="project-images"></a>
-            <div class="overlay overlayMayaBlue">
-                <div class="text">Breakout</div>
-            </div>
-        </div>
-        <div class="image-container right-images">
-            <a href="#"><img src="static/images/image-watermarking.png"
-                    alt="black and white image for my watermarking app" class="project-images"></a>
-            <div class="overlay overlayRose">
-                <div class="text">Watermarking App</div>
-            </div>
-        </div>
-        <br>
-        <div class="image-container">
-            <a href="#"><img src="static/images/speed-typing-test.png"
-                    alt="black and white image for my speed typing test app" class="project-images"></a>
-            <div class="overlay overlayVistaBlue">
-                <div class="text">Speed Typing Test</div>
-            </div>
-        </div>
-
+        {% endif %}
+        {% endfor %}
 
     </div>
 </div>
