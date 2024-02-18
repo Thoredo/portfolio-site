@@ -93,6 +93,15 @@ body {
     font-size: 12px;
     font-family: sans-serif;
     background-image: linear-gradient(to right, var(--transparent-vista-blue), var(--transparent-maya-blue));
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    flex: 1;
 }
 
 h1 {
@@ -232,12 +241,12 @@ h2 {
 }
 
 footer {
-    bottom: 20px;
     width: 100%;
     text-align: center;
     color: black;
     font-family: 'Cherry Swash', cursive;
     font-size: 16px;
+    padding: 10px 0;
 }
 
 .form-container {
