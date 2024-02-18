@@ -28,8 +28,9 @@
         "img-alt": "black and white image of breakout game",
         "overlay-class": "overlay overlayMayaBlue",
         "overlay-text": "Breakout",
-        "video-link": "",
-        "github-link": ""
+        "video-link": "https://www.youtube.com/embed/hFlOGZcBQH8?si=dSe4sk59z57ow9_H",
+        "github-link": "https://github.com/Thoredo/breakout-game",
+        "project-button": "Breakout"
     },
     {
         "project-name": "watermarking-app",
