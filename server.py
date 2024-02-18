@@ -104,7 +104,7 @@ def about():
 def show_project(name):
     requested_project = None
     for project in project_data:
-        if project["project-name"] == "name":
+        if project["project-name"] == name:
             requested_project = project
     return render_template("project.html", project=requested_project)
 
