@@ -8,7 +8,8 @@
     <div class="projects">
         {% for project in project_data %}
         <div class="{{ project['img-container-class'] }}">
-            <a href="#"><img src="{{ project['img-src'] }}" alt="{{ project['img-alt'] }}" class="project-images"></a>
+            <a href="{{ url_for('show_project', name=project['project-name']) }}"><img src="{{ project['img-src'] }}"
+                    alt="{{ project['img-alt'] }}" class="project-images"></a>
             <div class="{{ project['overlay-class'] }}">
                 <div class="text">{{ project['overlay-text'] }}</div>
             </div>

@@ -1,5 +1,6 @@
 [
     {
+        "project-name": "morse-code",
         "img-container-class": "image-container",
         "img-src": "static/images/morse-code.png",
         "img-alt": "black and white image with dots and stripes",
@@ -7,6 +8,7 @@
         "overlay-text": "Morse code"
     },
     {
+        "project-name": "tic-tac-toe",
         "img-container-class": "image-container right-images",
         "img-src": "static/images/tic-tac-toe.png",
         "img-alt": "black and white image of tic tac toe",
@@ -14,20 +16,23 @@
         "overlay-text": "Tic Tac toe"
     },
     {
+        "project-name": "breakout",
         "img-container-class": "image-container",
         "img-src": "static/images/breakout.png",
         "img-alt": "black and white image of breakout game",
         "overlay-class": "overlay overlayMayaBlue",
-        "overlay-text": "Watermarking App"
+        "overlay-text": "Breakout"
     },
     {
+        "project-name": "watermarking-app",
         "img-container-class": "image-container right-images",
         "img-src": "static/images/image-watermarking.png",
         "img-alt": "black and white image for my watermarking app",
         "overlay-class": "overlay overlayRose",
-        "overlay-text": "Breakout"
+        "overlay-text": "Watermarking App"
     },
     {
+        "project-name": "speed-typing-test",
         "img-container-class": "image-container",
         "img-src": "static/images/speed-typing-test.png",
         "img-alt": "black and white image for my speed typing test app",

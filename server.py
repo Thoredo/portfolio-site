@@ -45,6 +45,10 @@ def calculate_age(birthdate):
     return age
 
 
+with open("static/data/projects.json") as file:
+    project_data = json.load(file)
+
+
 @app.route("/")
 def index():
     return render_template("index.html", animation_class="start-home")
@@ -52,8 +56,6 @@ def index():
 
 @app.route("/projects")
 def projects():
-    with open("static/data/projects.json") as file:
-        project_data = json.load(file)
     return render_template(
         "projects.html", animation_class="start-projects", project_data=project_data
     )
@@ -96,6 +98,15 @@ def about():
     return render_template(
         "about.html", animation_class="start-about", age=age, age_nova=age_nova
     )
+
+
+@app.route("/project/<string:name>")
+def show_project(name):
+    requested_project = None
+    for project in project_data:
+        if project["project-name"] == "name":
+            requested_project = project
+    return render_template("project.html", project=requested_project)
 
 
 if __name__ == "__main__":
