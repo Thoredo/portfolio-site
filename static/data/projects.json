@@ -39,8 +39,9 @@
         "img-alt": "black and white image for my watermarking app",
         "overlay-class": "overlay overlayRose",
         "overlay-text": "Watermarking App",
-        "video-link": "",
-        "github-link": ""
+        "video-link": "https://www.youtube.com/embed/Qaz59P_z6HM?si=B5cq2Xt0npPYVZPD",
+        "github-link": "https://github.com/Thoredo/image-watermarking-gui",
+        "project-button": "Watermarking App"
     },
     {
         "project-name": "speed-typing-test",
@@ -49,7 +50,8 @@
         "img-alt": "black and white image for my speed typing test app",
         "overlay-class": "overlay overlayVistaBlue",
         "overlay-text": "Speed Typing Test",
-        "video-link": "",
-        "github-link": ""
+        "video-link": "https://www.youtube.com/embed/fl6GhvND1ZQ?si=DNq4xtLEQZRfYP4L",
+        "github-link": "https://github.com/Thoredo/typing-speed-test",
+        "project-button": "Typing Speed Test"
     }
 ]
