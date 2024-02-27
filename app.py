@@ -22,17 +22,24 @@ class ContactForm(FlaskForm):
 
 
 def send_mail(name, email, message):
-    # Send email
-    gmail_app_key = os.getenv("GMAIL_APP_KEY")
-    server = smtplib.SMTP("smtp.gmail.com", 587)
-    server.starttls()
-    server.login("jurgenstegemanportfolio@gmail.com", gmail_app_key)
+    from_addr = "jurgenst@jurgen-stegeman-portfolio.nl"
+    server = smtplib.SMTP('nl1-ss104.a2hosting.com', 587)
+    server.login(from_addr, os.getenv("PASSWORD"))
+    to_addr = "jurgenst@jurgen-stegeman-portfolio.nl"
 
     email_message = f"{name}, sent you the following message: \n{message}"
+    
+    print(from_addr)
+    print(to_addr)
+    print(email_message)
 
     text = f"Subject: Message from { email }\n\n{email_message}"
+    
+    print(text)
 
-    server.sendmail("jurgenstegemanportfolio@gmail.com", "jurgenstegeman@live.nl", text)
+    server.sendmail(from_addr, to_addr, text)
+    print(test)
+    server.quit()
 
 
 def calculate_age(birthdate):

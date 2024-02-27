@@ -14,7 +14,7 @@
 nav {
     margin: 27px auto 0;
     position: relative;
-    width: 470px;
+    width: 340px;
     height: 50px;
     background-color: var(--maya-blue);
     border-radius: 8px;
@@ -56,9 +56,6 @@ a:nth-child(3) {
     width: 110px;
 }
 
-a:nth-child(4) {
-    width: 130px;
-}
 
 nav .start-home,
 a:nth-child(1):hover~.animation {
@@ -74,19 +71,11 @@ a:nth-child(2):hover~.animation {
     background-color: var(--rose-pompadour);
 }
 
-nav .start-about,
+nav .start-contact,
 a:nth-child(3):hover~.animation {
     width: 110px;
     left: 230px;
-    background-color: var(--african-violet);
-}
-
-nav .start-contact,
-a:nth-child(4):hover~.animation {
-    width: 130px;
-    left: 340px;
     background-color: var(--cambridge-blue);
-    background-size: cover;
 }
 
 body {
@@ -202,7 +191,7 @@ h2 {
 }
 
 .hero-hyperlink-div {
-    margin-left: 43%;
+    margin-left: 46%;
     margin-top: 40px;
 }
 
@@ -217,27 +206,8 @@ h2 {
 }
 
 .hero-hyperlink:nth-child(1) {
-    border: var(--african-violet) solid 1px;
-    background-color: var(--african-violet);
-}
-
-.hero-hyperlink:nth-child(2) {
     border: var(--rose-pompadour) solid 1px;
     background-color: var(--rose-pompadour);
-}
-
-.about-text {
-    color: black;
-    font-size: 22px;
-    margin: 2% 10% 0% 0%;
-}
-
-.about-image {
-    width: 20%;
-    margin-left: 5%;
-    margin-right: 5%;
-    float: left;
-    margin-top: 2%;
 }
 
 footer {
@@ -334,8 +304,7 @@ footer {
     a,
     a:nth-child(1),
     a:nth-child(2),
-    a:nth-child(3),
-    a:nth-child(4) {
+    a:nth-child(3) {
         width: 100%;
         box-sizing: border-box;
         margin: 0;
@@ -357,16 +326,8 @@ footer {
         height: 50px;
     }
 
-    nav .start-about,
-    a:nth-child(3):hover~.animation {
-        width: 100%;
-        left: 0px;
-        top: 100px;
-        height: 50px;
-    }
-
     nav .start-contact,
-    a:nth-child(4):hover~.animation {
+    a:nth-child(3):hover~.animation {
         width: 100%;
         left: 0px;
         top: 150px;
@@ -392,15 +353,6 @@ footer {
     .hero-hyperlink-div {
         margin-left: 20%;
         margin-top: 40px;
-    }
-
-    .about-text {
-        margin-left: 5%;
-    }
-
-    .about-image {
-        width: 95%;
-        margin-bottom: 3%;
     }
 
     .form-container {
