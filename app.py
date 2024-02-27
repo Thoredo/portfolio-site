@@ -23,22 +23,15 @@ class ContactForm(FlaskForm):
 
 def send_mail(name, email, message):
     from_addr = "jurgenst@jurgen-stegeman-portfolio.nl"
-    server = smtplib.SMTP('nl1-ss104.a2hosting.com', 587)
+    server = smtplib.SMTP("nl1-ss104.a2hosting.com", 587)
     server.login(from_addr, os.getenv("PASSWORD"))
     to_addr = "jurgenst@jurgen-stegeman-portfolio.nl"
 
     email_message = f"{name}, sent you the following message: \n{message}"
-    
-    print(from_addr)
-    print(to_addr)
-    print(email_message)
 
     text = f"Subject: Message from { email }\n\n{email_message}"
-    
-    print(text)
 
     server.sendmail(from_addr, to_addr, text)
-    print(test)
     server.quit()
 
 
